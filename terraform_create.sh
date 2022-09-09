@@ -13,6 +13,7 @@ az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/698b5510-
 
 #Initialize terraform configuration
 terraform init;
+terraform plan --out=tfplan
 terraform fmt;
 terraform validate;
 terraform apply;
